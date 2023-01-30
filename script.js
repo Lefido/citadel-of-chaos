@@ -2,8 +2,8 @@
 
  AOS.init();
 
-import { etapes } from "./Etape.js";
-import { pathway } from "./Pathway.js";
+import { etapes } from "./scripts/Etape.js";
+import { pathway } from "./scripts/Pathway.js";
 
 const naratif = document.querySelector(".check-naratif")
 const choice = document.querySelector(".choice-containt")
