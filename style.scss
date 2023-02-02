@@ -28,7 +28,7 @@ body {
   width: 100%;
   background-color: black;
   color: white;
-  overflow: hidden;
+  // overflow: hidden;
 
 
   background: url("./assets/cbg_ciel_bleu.jpg") no-repeat center/ cover;
@@ -292,13 +292,13 @@ header {
 
 .user {
   width: 95%;
-  box-shadow: 0 0 10px 2px white;
+  // box-shadow: 0 0 10px 2px white;
   margin: auto;
   border-radius: 10px;
   padding: 10px;
 
   img {
-    width: 300px;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.322);
     border-radius: 40px;
@@ -341,7 +341,7 @@ header {
 
 .naratif {
   position: relative;
-  height: 80vh;
+  height: 75vh;
   z-index: 0;
   
   
@@ -364,7 +364,7 @@ header {
 }
 
 .naratif-scroll {
-    height: 74vh;
+    height: 69vh;
     overflow-y : auto;
    
 }
@@ -389,7 +389,7 @@ header {
 
 .choice {
   position: relative;
-  height: 19vh;
+  height: 23vh;
   z-index: 1;
   
 }
@@ -438,25 +438,32 @@ header {
 .inventaire {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  // align-items: center;
   width: 95%;
   margin: auto;
   height: 94vh;
   gap: 5px;
 
-  // border: 1px solid red;
+  h3 {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
 
- 
 }
 
-// .img-inventaire {
+.objets, .magies {
 
-//   background: url("./assets/parchemin.png") no-repeat center/ contain;
-//   background-size: 105% 104%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
 
-// }
-
+}
 
 
 .cont-combat {
@@ -497,7 +504,7 @@ header {
       
 
       img {
-        height: 250px;
+        height: 25%;
       }
     }
 
@@ -564,5 +571,209 @@ header {
   background-size: 105% 104%;
 
 }
+
+.puce-1, .puce-2 {
+
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background-color: brown;
+  border-radius: 15%;
+  top: 15px;
+  display: none;
+  font-family: 'medieval', sans-serif;
+  font-size: 20px;
+  border: 1px solid gray;
+  
+}
+
+.puce-1 {
+
+left: 5%;
+
+
+}
+
+.puce-2 {
+
+  right: 5%;
+  
+  }
+
+@media screen and (max-width:1050px){
+
+.cont-user {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+
+  h1 {
+  
+    width: auto;
+    padding: 0;
+    display: none;
+  
+  }
+
+  h2 { 
+  
+    padding: 0 10px;
+  
+  }
+
+
+}
+
+.user {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 5px;
+
+  .avatar {
+  
+    width: 50px;
+  
+  }
+}
+
+.profil-user {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 10px;
+  gap: 0px;
+
+  p {
+  
+    font-size: 12px;
+  
+  }
+
+
+}
+
+.cont-naratif-choice {
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+
+}
+
+.naratif {
+
+  width: 100%;
+  height: 85vh;
+  position: relative;
+
+}
+
+.naratif-scroll {
+
+  height: 95%;
+  
+  p {
+  
+    padding: 0 5px;
+  
+  }
+
+}
+
+.naratif-containt {
+
+  height: 80vh;
+
+}
+
+.choice, .cont-inventaire {
+
+  display: none;
+
+}
+
+.cont-inventaire {
+
+  display: block;
+  position: relative;
+  
+  }
+
+.puce-1, .puce-2 {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+
+
+}
+
+.puce-1:hover, .puce-2:hover {
+
+  cursor: pointer;
+background-color: gray;
+
+
+}
+
+.choice-visible {
+
+display: block;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: auto;
+width: 80%;
+padding: 10px;
+
+
+
+}
+
+.inventaire-visible {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  z-index: -1;
+  border: 1px solid green;
+  
+  }
+
+ 
+}
+
+
+
+
+
+
+
+
+
 
 

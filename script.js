@@ -1,47 +1,97 @@
 
-
- AOS.init();
-
-import { etapes } from "./scripts/Etape.js";
-import { pathway } from "./scripts/Pathway.js";
+AOS.init();
 
 const naratif = document.querySelector(".check-naratif")
 const choice = document.querySelector(".choice-containt")
 
-console.log(choice)
+const cont_choice = document.querySelector('.choice')
+const cont_inventaire = document.querySelector('.inventaire')
 
-let etape = 1
 
-naratif.innerHTML = check_naratif(etape)
+const puce_1 = document.querySelector(".puce-1")
 
-choices(pathway[etape].choice)
+puce_1.addEventListener("click", function (){
 
-// Check naratif
+   console.log("j'ai cliqué sur choice")
+   cont_choice.classList.toggle('choice-visible')
 
-function check_naratif(id) {
+})
 
-    return etapes[id].containt
+const puce_2 = document.querySelector(".puce-2")
+
+puce_2.addEventListener("click", function (){
+
+   console.log("j'ai cliqué sur l'inventaire")
+   cont_inventaire.classList.toggle('inventaire-visible')
+
+})
+
+
+let url = './json/citadel_of_chaos.json';
+let response = await fetch(url);
+
+let list_etape = await response.json(); // lire le corps de réponse et analyser en JSON
+
+
+let num_etape = 1;
+
+choice_etape(list_etape[num_etape])
+
+
+/// Affiche l'étape en cours ///
+
+function choice_etape(etape) {
+
+   naratif.innerHTML = num_etape + ". " + etape.containt
+
+   switch (etape.step_tape) {
+
+      // Mode combat
+   
+      case "combat":
+
+         console.log("Combat");
+
+         combat(etape.max_rounds)
+
+         if (etape.is_escapable) {
+
+            console.log("Combat obligatoire")
+         
+         } else {
+
+
+          console.log("Je peux fuir le combat")
+         
+         }
+
+         break;
+
+      // Mode chance
+      
+      case "chance":
+         console.log("chance");
+         chance()
+         break;
+
+   }
+
 }
 
-// Liste des questions
+/// Combat ///
 
-function choices(list_choix) {
+function combat(nb_rounds) {
 
-    choice.innerHTML =""
+   console.log("Max round ", nb_rounds)
 
-    list_choix.forEach(choix => {
+}
 
-        let btn = document.createElement('a')
-        
-        choice.appendChild(btn);
+/// Chance ///
 
-        btn.innerHTML = choix[0]
+function chance() {
 
-        console.log(choix[0])
-        
-    });
 
-    console.log(list_choix.length)
+
 }
 
 
