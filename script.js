@@ -16,6 +16,7 @@ click_choice.addEventListener("click", function (){
 
    console.log("j'ai cliqué sur choice")
    cont_choice.classList.toggle('choice-visible')
+   cont_inventaire.classList.remove('inventaire-visible')
 
 })
 
@@ -25,6 +26,7 @@ puce_2.addEventListener("click", function (){
 
    console.log("j'ai cliqué sur l'inventaire")
    cont_inventaire.classList.toggle('inventaire-visible')
+   cont_choice.classList.remove('choice-visible')
 
 })
 

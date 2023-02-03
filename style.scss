@@ -2,22 +2,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
- 
 }
 
 @font-face {
   font-family: "90s";
   src: url("./fonts/90s.ttf");
-
 }
 
 @font-face {
   font-family: "medieval";
   src: url("./fonts/medieval.ttf");
-
 }
-
 
 a {
   color: blue;
@@ -30,26 +25,21 @@ body {
   color: white;
   // overflow: hidden;
 
-
   background: url("./assets/cbg_ciel_bleu.jpg") no-repeat center/ cover;
-
 }
 
-
 body::-webkit-scrollbar {
-
-  width: 5px; 
-
+  width: 5px;
 }
 
 body::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: white; 
-  border-radius: 20px; 
-  border: 1px solid gray; 
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid gray;
 }
 
 .dsp-col {
@@ -66,7 +56,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .form {
-  
   padding: 10px;
   border-radius: 10px;
   width: 350px;
@@ -95,24 +84,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid rgba(165, 42, 42, 0.808);
   }
 
-  .btn-color {
-    background-color: rgba(165, 42, 42, 0.808);
-    color: white;
-  }
-
-  .btn {
-    width: 100%;
-    height: 40px;
-    padding: 5px 30px;
-    margin-top: 10px;
-    transition: 0.2s;
-    border-radius: 15px;
-  }
-
-  .btn:hover {
-    background-color: gray;
-    color: white;
-  }
+  
 
   a {
     width: 95%;
@@ -133,12 +105,10 @@ h1 {
   font-size: 70px;
   text-transform: uppercase;
   text-align: center;
-  
 }
 
 h2 {
   font-size: 50px;
-  
 }
 
 header {
@@ -146,43 +116,33 @@ header {
   height: 100vh;
   margin: auto;
   background: url("./assets/bg_citadel.jpg") no-repeat center / cover;
-  box-shadow: 0 0 10px 5px black ;
+  box-shadow: 0 0 10px 5px black;
 
-  
   h1,
   h2,
-  h3, 
-  label, 
-  input, 
+  h3,
+  label,
+  input,
   a {
-  
-    font-family: 'medieval', sans-serif;
-
+    font-family: "medieval", sans-serif;
   }
 
   h1 {
-
-
     text-decoration: overline;
     text-shadow: 0 0 5px black;
-    
   }
 
   h2 {
     text-shadow: 0 0 5px black;
   }
 
-
   p {
-  
-    font-family: '90s', sans-serif;
-  
+    font-family: "90s", sans-serif;
   }
 
-  input, label {
-  
+  input,
+  label {
     font-size: 20px;
-  
   }
 
   a {
@@ -198,8 +158,27 @@ header {
   a:hover {
     background-color: gray;
     color: white;
-    scale: 1;
   }
+}
+
+.btn-color {
+  background-color: rgba(165, 42, 42, 0.808);
+  color: white;
+}
+
+.btn {
+ 
+  padding: 5px 30px;
+  transition: 0.2s;
+  border-radius: 15px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: gray;
+  color: white;
+  // scale: 1.1;
+  box-shadow: 0 0 10px 2px black;
 }
 
 .separateur {
@@ -210,7 +189,6 @@ header {
 
 .cont-user,
 .cont-inventaire {
-
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -221,10 +199,6 @@ header {
   padding: 10px 5 px;
   text-align: center;
   z-index: 1;
-
-  // border: 1px solid red;
-
-  // background: url("./assets/texture-bois.jpg") no-repeat center / cover;
 
   h1 {
     font-size: 25px;
@@ -251,8 +225,7 @@ header {
   }
 
   p {
-
-    font-family: 'medieval', sans-serif;
+    font-family: "medieval", sans-serif;
     border-radius: 10px;
     transition: 0.2s;
     background-color: rgba(165, 42, 42, 0.808);
@@ -261,7 +234,7 @@ header {
     font-size: 14px;
     border: 1px solid gray;
     padding: 8px 8px;
-    letter-spacing: 1px ;
+    letter-spacing: 1px;
   }
 
   p:hover {
@@ -269,14 +242,11 @@ header {
     color: black;
     cursor: pointer;
     scale: 1.1;
-    
   }
-
 }
 
 .cont-user::after,
 .cont-inventaire::after {
-
   content: "";
   width: 100%;
   height: 100%;
@@ -285,7 +255,6 @@ header {
   opacity: 0.5;
 
   background: url("./assets/texture-bois.jpg") no-repeat center / cover;
-
 }
 
 .user {
@@ -304,7 +273,6 @@ header {
 }
 
 .profil-user {
-
   padding: 30px;
   width: 95%;
   margin: auto;
@@ -341,9 +309,6 @@ header {
   position: relative;
   height: 75vh;
   z-index: 0;
-  
-  
-
 }
 
 .naratif::after {
@@ -358,42 +323,34 @@ header {
 
   background: url("./assets/parchemin.png") no-repeat center/ contain;
   background-size: 100% 104%;
-
 }
 
 .naratif-scroll {
-    height: 69vh;
-    overflow-y : auto;
-   
+  height: 69vh;
+  overflow-y: auto;
 }
 
 .naratif-scroll::-webkit-scrollbar {
-
   width: 5px;
-
 }
 
 .naratif-scroll::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
 
 .naratif-scroll::-webkit-scrollbar-thumb {
   background-color: white;
-  border-radius: 20px; 
-  border: 1px solid gray; 
+  border-radius: 20px;
+  border: 1px solid gray;
 }
-
-
 
 .choice {
   position: relative;
   height: 23vh;
   z-index: 1;
-  
 }
 
 .choice::after {
-
   content: "";
   width: 100%;
   height: 100%;
@@ -405,7 +362,6 @@ header {
 
   background: url("./assets/parchemin.png") no-repeat center/ contain;
   background-size: 100% 104%;
-
 }
 
 .choice-containt {
@@ -416,13 +372,12 @@ header {
   padding: 10px 20px;
   gap: 10px;
 
-
   a {
     padding: 5px 20px;
     border-radius: 15px;
     transition: 0.2s;
     font-size: 15px;
-    letter-spacing: 1px ;
+    letter-spacing: 1px;
   }
 
   a:hover {
@@ -444,25 +399,20 @@ header {
   gap: 5px;
 
   h3 {
-  
     display: flex;
     justify-content: center;
     align-items: center;
-  
   }
-
 }
 
-.objets, .magies {
-
+.objets,
+.magies {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   gap: 5px;
-
 }
-
 
 .cont-combat {
   width: 100%;
@@ -499,7 +449,6 @@ header {
 
     .avatar {
       width: 100%;
-      
 
       img {
         height: 25%;
@@ -557,21 +506,17 @@ header {
 }
 
 .panneau-bois {
-
   background: url("./assets/panneau_bois.png") no-repeat center/ contain;
   background-size: 101% 104%;
-
 }
 
 .panneau-bois-lg {
-
   background: url("./assets/panneau_bois_lg.png") no-repeat center/ contain;
   background-size: 105% 104%;
-
 }
 
-.puce-1, .puce-2 {
-
+.puce-1,
+.puce-2 {
   position: absolute;
   width: 100px;
   height: 30px;
@@ -579,224 +524,210 @@ header {
   border-radius: 15%;
   top: 15px;
   display: none;
-  font-family: 'medieval', sans-serif;
+  font-family: "medieval", sans-serif;
   font-size: 20px;
   border: 1px solid gray;
-  
 }
 
 .puce-1 {
-
-left: 5%;
-
-
+  left: 5%;
 }
 
 .puce-2 {
-
   right: 5%;
-  
-  }
-
-@media screen and (max-width:1050px){
-
-.cont-user {
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-
-  h1 {
-  
-    width: auto;
-    padding: 0;
-    display: none;
-  
-  }
-
-  h2 { 
-  
-    padding: 0 10px;
-  
-  }
-
-
 }
 
-.user {
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  padding: 5px;
-
-  .avatar {
-  
-    width: 50px;
-  
-  }
-}
-
-.profil-user {
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 5px 10px;
-  gap: 5px;
-
-  p {
-  
-    font-size: 12px;
-  
-  }
-
-}
-
-.cont-naratif-choice {
-
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+.cont-selection {
+ 
   position: relative;
-
-}
-
-.naratif {
-
-  width: 100%;
-  height: 85vh;
-  position: relative;
+  padding: 40px 20px;
+  max-width: 400px;
+  z-index: 0;
+  text-shadow: 0 0 2px black;
+  text-align: center;
 
   h2 {
   
-    font-size: 20px;
-    height: 50px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
   
   }
 
-  p {
-  
-    font-size: 14px;
-  
+  .check-dice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 5px;
+
+    button {
+    
+      font-family: "medieval", sans-serif;
+      font-size: 17px;
+    
+    }
+
   }
-
 }
 
-.naratif-scroll {
-
-  height: 95%;
-  
-  p {
-  
-    padding: 0 5px;
-  
-  }
-
-}
-
-.naratif-containt {
-
-  height: 80vh;
-
-}
-
-.choice, .cont-inventaire {
-
-  display: none;
-
-}
-
-
-
-.puce-1, .puce-2 {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s;
-
-
-}
-
-.puce-1:hover, .puce-2:hover {
-
-  cursor: pointer;
-  background-color: gray;
-  scale: 1.1;
-  border: 1px solid lightgray;
-
-}
-
-.puce-1:hover {
-
-  rotate: 2deg;
-
-}
-
-.puce-2:hover {
-
-  rotate: -2deg;
-}
-
-.choice-visible {
-
-display: block;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-height: auto;
-width: 80%;
-padding: 10px;
-
-
-
-}
-
-.choice::after {
-
-  opacity: 1;
-
-}
-
-header {
-
-  position: relative;
-
-}
-
-.inventaire-visible {
-
-  display: flex;
-  width: 70%;
-  left: 50%;
-  height: auto;
+.cont-selection::after {
+  content: "";
   position: absolute;
-  transform: translateX(-50%);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("./assets/panneau_bois.png") no-repeat center/ contain;
+  background-size: 100% 100%;
 
 }
 
-.cont-inventaire::after {
-  
-  opacity: 1;
-  border-radius: 20px;
+// RESPONSIVE
 
+@media screen and (max-width: 1050px) {
+  .cont-user {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+
+    h1 {
+      width: auto;
+      padding: 0;
+      display: none;
+    }
+
+    h2 {
+      padding: 0 10px;
+    }
+  }
+
+  .user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+
+    .avatar {
+      width: 50px;
+    }
+  }
+
+  .profil-user {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px;
+    gap: 5px;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .cont-naratif-choice {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .naratif {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+
+    h2 {
+      font-size: 20px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p {
+      font-size: 14px;
+      padding: 0 20px;
+    }
+  }
+
+  .naratif-scroll {
+    height: 95%;
+  }
+
+  .naratif-containt {
+    height: 80vh;
+  }
+
+  .choice,
+  .cont-inventaire {
+    display: none;
+  }
+
+  .puce-1,
+  .puce-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  .puce-1:hover,
+  .puce-2:hover {
+    cursor: pointer;
+    background-color: gray;
+    scale: 1.1;
+    border: 1px solid lightgray;
+  }
+
+  .puce-1:hover {
+    rotate: 2deg;
+  }
+
+  .puce-2:hover {
+    rotate: -2deg;
+  }
+
+  .choice-visible {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .choice::after {
+    opacity: 1;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .inventaire-visible {
+    display: flex;
+    width: 70%;
+    left: 50%;
+    height: auto;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  .cont-inventaire::after {
+    opacity: 1;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px black;
+  }
 }
-
- 
-}
-
