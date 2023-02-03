@@ -1,16 +1,18 @@
 
 AOS.init();
 
+const check_naratif = document.querySelector(".check-naratif")
+
 const naratif = document.querySelector(".check-naratif")
 const choice = document.querySelector(".choice-containt")
 
 const cont_choice = document.querySelector('.choice')
-const cont_inventaire = document.querySelector('.inventaire')
+const cont_inventaire = document.querySelector('.cont-inventaire')
 
 
-const puce_1 = document.querySelector(".puce-1")
+const click_choice = document.querySelector(".puce-1")
 
-puce_1.addEventListener("click", function (){
+click_choice.addEventListener("click", function (){
 
    console.log("j'ai cliqué sur choice")
    cont_choice.classList.toggle('choice-visible')
@@ -23,6 +25,13 @@ puce_2.addEventListener("click", function (){
 
    console.log("j'ai cliqué sur l'inventaire")
    cont_inventaire.classList.toggle('inventaire-visible')
+
+})
+
+check_naratif.addEventListener('click', function() {
+
+   cont_choice.classList.remove('choice-visible')
+   cont_inventaire.classList.remove('inventaire-visible')
 
 })
 

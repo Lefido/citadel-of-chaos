@@ -286,8 +286,6 @@ header {
 
   background: url("./assets/texture-bois.jpg") no-repeat center / cover;
 
-
-
 }
 
 .user {
@@ -649,18 +647,17 @@ left: 5%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 5px 10px;
-  gap: 0px;
+  gap: 5px;
 
   p {
   
     font-size: 12px;
   
   }
-
 
 }
 
@@ -706,12 +703,7 @@ left: 5%;
 
 }
 
-.cont-inventaire {
 
-  display: block;
-  position: relative;
-  
-  }
 
 .puce-1, .puce-2 {
 
@@ -727,7 +719,8 @@ left: 5%;
 .puce-1:hover, .puce-2:hover {
 
   cursor: pointer;
-background-color: gray;
+  background-color: gray;
+  scale: 1.1;
 
 
 }
@@ -747,33 +740,36 @@ padding: 10px;
 
 }
 
+.choice::after {
+
+  opacity: 0.9;
+
+}
+
+header {
+
+  position: relative;
+
+}
+
 .inventaire-visible {
 
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  position: absolute;
-  top: 50%;
+  width: 70%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  height: 50vh;
   height: auto;
-  width: 100%;
-  padding: 10px;
-  z-index: -1;
-  border: 1px solid green;
+  position: absolute;
+  transform: translateX(-50%);
+
+}
+
+.cont-inventaire::after {
   
-  }
+  opacity: 1;
+
+}
 
  
 }
-
-
-
-
-
-
-
-
-
-
 
