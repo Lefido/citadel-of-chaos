@@ -677,6 +677,22 @@ left: 5%;
   height: 85vh;
   position: relative;
 
+  h2 {
+  
+    font-size: 20px;
+    height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+  }
+
+  p {
+  
+    font-size: 14px;
+  
+  }
+
 }
 
 .naratif-scroll {
@@ -742,7 +758,7 @@ padding: 10px;
 
 .choice::after {
 
-  opacity: 0.9;
+  opacity: 1;
 
 }
 
@@ -757,7 +773,6 @@ header {
   display: flex;
   width: 70%;
   left: 50%;
-  height: 50vh;
   height: auto;
   position: absolute;
   transform: translateX(-50%);

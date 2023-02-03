@@ -538,6 +538,16 @@ header a:hover {
     height: 85vh;
     position: relative;
   }
+  .naratif h2 {
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .naratif p {
+    font-size: 14px;
+  }
   .naratif-scroll {
     height: 95%;
   }
@@ -573,7 +583,7 @@ header a:hover {
     padding: 10px;
   }
   .choice::after {
-    opacity: 0.9;
+    opacity: 1;
   }
   header {
     position: relative;
@@ -582,7 +592,6 @@ header a:hover {
     display: flex;
     width: 70%;
     left: 50%;
-    height: 50vh;
     height: auto;
     position: absolute;
     transform: translateX(-50%);
