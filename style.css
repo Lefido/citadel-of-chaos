@@ -571,6 +571,13 @@ header a:hover {
     cursor: pointer;
     background-color: gray;
     scale: 1.1;
+    border: 1px solid lightgray;
+  }
+  .puce-1:hover {
+    rotate: 2deg;
+  }
+  .puce-2:hover {
+    rotate: -2deg;
   }
   .choice-visible {
     display: block;
@@ -598,6 +605,7 @@ header a:hover {
   }
   .cont-inventaire::after {
     opacity: 1;
+    border-radius: 20px;
   }
 }
 
