@@ -548,7 +548,9 @@ header {
 
   h2 {
   
+    // color: black;
     border-bottom: 2px solid white;
+    // text-shadow: 0 0 2px white;
     margin-bottom: 20px;
   
   }
@@ -558,6 +560,12 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 5px 0 5px;
+
+    h3 {
+    
+    font-size: 22px;
+
+    }
 
     button {
     

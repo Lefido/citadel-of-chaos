@@ -507,6 +507,9 @@ header a:hover {
   align-items: center;
   margin: 5px 0 5px;
 }
+.cont-selection .check-dice h3 {
+  font-size: 22px;
+}
 .cont-selection .check-dice button {
   font-family: "medieval", sans-serif;
   font-size: 17px;
